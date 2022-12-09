@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon1.ico">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a class="logo" href="index.html"><img src="images/help.png" alt="logo" height="40" width="40"></a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <div class="nav-links">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+            </ul>
+            </div>
+        </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".toggle").on("click", function(){
+                if($(".nav-links").hasClass("active")){
+                    $(".nav-links").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                } else{
+                    $(".nav-links").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+
+                }
+
+            });
+        });
+
+    </script>
+
+
+
+        <div class="text-box">
+            <h1>A Step to Better Health</h1>
+            <p>Seeking the support of a counselor to address the symptoms of mental illness or difficult life
+                circumstances is becoming increasingly accepted as a normal and helpful action, even if you appear to be
+                “fine” to others in your life.
+                This will be helpful in learning to care for yourself or your relationships better. Take the first step
+                now.</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1 id="services">Counseling Sessions We Offer</h1>
+        <br>
+        <div class="row">
+            <div class="services-col">
+                <h3>One-on-One Counseling</h3>
+                <p>One-on-one therapy allows you to speak to someone in confidence. A professional counselor can respond
+                    to your concerns objectively, offer a comforting word, and give you sound advice to help you live a
+                    better life.</p>
+            </div>
+            <div class="services-col">
+                <h3>Couples Counseling</h3>
+                <p>Also known as marriage counseling, relationship counseling, or couples therapy, couples counseling
+                    focuses on the couple as the client. It is not centered on individual issues; it is about the issues
+                    that the couple together is facing.</p>
+            </div>
+            <div class="services-col">
+                <h3>Family Counseling</h3>
+                <p>Family counseling, or family therapy, is a method to develop and maintain healthy and functional
+                    family relationships.The goal is to identify and address problems in the family. These issues could
+                    be emotional, psychological, or behavioral.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1 id="contact">Contact Us</h1>
+        <br>
+    </section>
+    <div class="super">
+        <form>
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Your name</label>
+            </div>
+            <div class="input-group">
+                <input type="number" id="age" min="0" max="110" required>
+                <label for="age">Your age</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Your email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message">Your message</label>
+            </div>
+            <button onclick="window.location.href='mailto:name@email.com';">SEND</button>
+        </form>
+    </div>
+    <section class="faqs">
+        <h1 id="faqs">Frequently Asked Questions</h1>
+        <br>
+        <div class="row">
+            <div class="faqs-col">
+                <h3>What can I expect at a counseling session?</h3>
+                <p>We strive to make the counseling atmosphere relaxed, comfortable, and free from judgment. During your
+                    initial session, we will discuss your current situation and relevant history. From there, each
+                    counseling session is constructed from the goals you have identified as the basis for your growth.
+                </p>
+            </div>
+            <div class="faqs-col">
+                <h3>Do you offer counseling services for children and teenagers?</h3>
+                <p>Yes. Children and teenagers are often helped by having their own individual sessions, sometimes in
+                    combination with family counseling. Teenagers can play an active role along with their counselor in
+                    deciding what will work best for them.</p>
+            </div>
+            <div class="faqs-col">
+                <h3>Are my sessions confidential?</h3>
+                <p>As a client, you are guaranteed the protection of confidentiality within the boundaries of the
+                    client/counselor relationship. The only limitations to confidentiality occur when clients are
+                    considered either a threat to themselves or someone else, or when legal requirements demand that
+                    confidential information be disclosed. Please contact us if you have any questions regarding our
+                    confidentiality policy.</p>
+            </div>
+            <div class="faqs-col">
+                <h3>How can counseling help me?</h3>
+                <p>There are times in life when certain issues or life events can cause emotional distress, put a strain
+                    on relationships, or make it feel like your world is crumbling. Foundations Counseling offers the
+                    caring, expert assistance that you need during these stressful times. We can help you find new ways
+                    to cope with the challenges in your life.</p>
+            </div>
+            <div class="faqs-col">
+                <h3>What type of training do your counselors have?</h3>
+                <p>Every one of our therapists has either a Master’s or Doctoral degree in counseling or psychology.
+                    Each counselor has specialized training and expertise in several specific areas of therapy.</p>
+            </div>
+            <div class="faqs-col">
+                <h3>How will I know when I am done with counseling?</h3>
+                <p>Successful therapy depends on setting clear, realistic, attainable goals up front. When our time
+                    together has a clear objective, it makes it much easier to measure success.
+                    It is normal for goals to evolve during the course of working together, and it is also perfectly
+                    okay and normal to introduce new goals as we go through the process. As long as we stay clear on
+                    what we’re working on, reaching the end will usually be obvious.</p>
+            </div>
+        </div>
+    </section>
+    <div class="wrap">
+        <div class="icon-box">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a>   
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a> 
+                <p>All Rights Reserved &copy;2022</p>
+    </div>
+</body>
+</html>
